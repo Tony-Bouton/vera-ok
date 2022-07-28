@@ -47,6 +47,7 @@ export default {
 
       const data = await response.json();
       console.log(data);
+      window.location.href = "http://localhost:8080/api/restaurants/index";
     },
   },
 };
