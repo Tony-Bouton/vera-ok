@@ -1,9 +1,10 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Home</router-link>
+    <router-link to="/api/restaurants/create">create</router-link>
+    <router-link to="/api/restaurants/index">liste</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
@@ -17,11 +18,15 @@
 
 nav {
   padding: 30px;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav a {
   font-weight: bold;
   color: #2c3e50;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav a.router-link-exact-active {
